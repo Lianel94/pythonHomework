@@ -10,7 +10,7 @@ num = int(input("Type the number of elements in the array: "))
 arr = []
 count = 0
 for i in range(num):
-    arr.append(random.randint(1,10))
+    arr.append(random.randint(1, 10))
 
 print(arr)
 
@@ -18,6 +18,8 @@ user_num = int(input("type the number you want to count: "))
 for i in arr:
     if user_num == i:
         count += 1
+
+# arr.count(user_num)
 
 print(count)
 
