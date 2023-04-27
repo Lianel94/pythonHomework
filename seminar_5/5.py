@@ -18,3 +18,14 @@ print(num_to_pow(num, pow))
 *Пример:*
 2 2
 4  """
+
+num1 = int(input("Type the first positive number: "))
+num2 = int(input("Type the second positive number: "))
+
+
+def sum(num1, num2):
+    if num2 == 0:
+        return num1
+    return sum(num1 + 1, num2 - 1)
+
+print(sum(num1, num2))
